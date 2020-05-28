@@ -48,7 +48,3 @@ To see the app in action, go to [Ivan's YelpCamp Demo](https://shielded-mesa-045
 
 * [Heroku](https://www.heroku.com/)
 * [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-
-## License
-
-#### [MIT](./LICENSE)
