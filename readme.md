@@ -1,6 +1,6 @@
 # YelpCamp
 
-> A Node.js web application project that I've done while on LEARNCSC's Udemy course - [The Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/)
+> A Node.js web application project that I've done while on Udemy's Web Development course - [The Web Developer Bootcamp](https://www.udemy.com/the-web-developer-bootcamp/)
 
 ## Demo
 
