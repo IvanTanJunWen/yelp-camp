@@ -19,16 +19,8 @@ var commentRoutes    = require("./routes/comments"),
    
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useUnifiedTopology', true);
-// mongoose.connect("mongodb://localhost/yelp_camp_v12");
-mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect('mongodb+srv://root:<password>@cluster0-2hmyt.mongodb.net/test?retryWrites=true&w=majority', {
-//     useNewUrlParser: true,
-//     useCreateIndex: true
-// }).then(() => {
-//     console.log('Connected to DB!');
-// }).catch(err => {
-//     console.log('ERROR:', err.message);
-// });
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v12"
+mongoose.connect(url);
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine","ejs");
@@ -36,7 +28,7 @@ app.use(methodOverride("_method"));
 app.use(flash());
 app.use(express.static(__dirname + "/public"));
 //seed the database
-// seedDB(); 
+seedDB(); 
 
 // PASSPORT CONFIGURATION
 
